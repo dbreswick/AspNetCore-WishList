@@ -24,12 +24,17 @@ namespace WishList
         {
             if(env.IsDevelopment())
             {
+
                 app.UseDeveloperExceptionPage();
+
             }
             else
+
             {
                 app.UseExceptionHandler("/home/error");
-            }
+                
+            }  
+                app.UseMvcWithDefaultRoute();
         }
     }
 }
